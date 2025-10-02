@@ -8,7 +8,6 @@ const NAVIGATION_TARGETS = [
   { id: "services", label: "Servicos" },
   { id: "portfolio", label: "Portfolio" },
   { id: "about", label: "Sobre" },
-  { id: "testimonials", label: "Depoimentos" },
 ] as const;
 
 const SiteHeader = () => {
@@ -98,3 +97,4 @@ const SiteHeader = () => {
 };
 
 export default SiteHeader;
+
