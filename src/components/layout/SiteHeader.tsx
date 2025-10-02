@@ -1,7 +1,7 @@
 ﻿import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import produtoraMachineLogo from "@/assets/produtora-machine-logo.png";
-import { Button } from "@/components/ui/button";
 import { siteMetadata } from "@/config/site-metadata";
 
 const NAVIGATION_TARGETS = [
@@ -23,10 +23,7 @@ const SiteHeader = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavigate = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setIsMenuOpen(false);
-  };
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header
@@ -36,29 +33,34 @@ const SiteHeader = () => {
     >
       <div className="container mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
+          <Link
+            aria-label="Ir para o topo"
+            className="flex items-center"
+            onClick={closeMenu}
+            to="/#top"
+          >
             <img
               alt="Logo da Machine Produtora"
               className="mr-2 h-9 w-9"
               src={produtoraMachineLogo}
             />
             <span className="text-2xl font-bold text-glow">{siteMetadata.brandName}</span>
-          </div>
+          </Link>
 
           <nav aria-label="Menu principal" className="hidden items-center space-x-8 md:flex">
             {NAVIGATION_TARGETS.map((item) => (
-              <button
+              <Link
                 className="text-foreground transition-colors hover:text-primary"
                 key={item.id}
-                onClick={() => handleNavigate(item.id)}
-                type="button"
+                onClick={closeMenu}
+                to={`/#${item.id}`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
-            <Button className="btn-secondary" onClick={() => handleNavigate("contact")} type="button">
+            <Link className="btn-secondary" onClick={closeMenu} to="/#contact">
               Contato
-            </Button>
+            </Link>
           </nav>
 
           <button
@@ -76,18 +78,18 @@ const SiteHeader = () => {
           <div className="border-t border-border/20 py-4 md:hidden">
             <nav aria-label="Menu principal mobile" className="flex flex-col space-y-4">
               {NAVIGATION_TARGETS.map((item) => (
-                <button
+                <Link
                   className="text-left text-foreground transition-colors hover:text-primary"
                   key={`mobile-${item.id}`}
-                  onClick={() => handleNavigate(item.id)}
-                  type="button"
+                  onClick={closeMenu}
+                  to={`/#${item.id}`}
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
-              <Button className="btn-secondary w-fit" onClick={() => handleNavigate("contact")} type="button">
+              <Link className="btn-secondary w-fit" onClick={closeMenu} to="/#contact">
                 Contato
-              </Button>
+              </Link>
             </nav>
           </div>
         )}
@@ -97,4 +99,5 @@ const SiteHeader = () => {
 };
 
 export default SiteHeader;
+
 
