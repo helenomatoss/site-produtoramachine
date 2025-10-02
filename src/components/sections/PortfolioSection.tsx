@@ -4,7 +4,7 @@ import { PORTFOLIO_ITEMS } from "@/data/portfolio";
 
 export function PortfolioSection() {
   return (
-    <section id="portfolio" className="bg-blue-900/10 py-20 md:py-32">
+    <section id="portfolio" className="scroll-mt-24 md:scroll-mt-28 bg-blue-900/10 py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold md:text-4xl">
@@ -50,3 +50,4 @@ export function PortfolioSection() {
     </section>
   );
 }
+

@@ -38,7 +38,7 @@ const ContactSection = () => {
   const contactPhone = siteMetadata.contactPhone?.trim();
 
   return (
-    <section id="contact" className="bg-gradient-to-b from-background to-background/95 py-20">
+    <section id="contact" className="scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-background to-background/95 py-20">
       <div className="container mx-auto px-6">
         <div className="animate-fade-in-up mb-16 text-center">
           <h2 className="text-4xl font-bold md:text-5xl">
@@ -152,3 +152,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
