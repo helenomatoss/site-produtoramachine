@@ -14,12 +14,18 @@ const SiteFooter = () => {
           </div>
 
           <div className="mb-6 inline-flex items-center justify-center">
-            <div className="flex items-center space-x-2 rounded-lg bg-white/90 px-4 py-2 backdrop-blur-sm">
+            <a
+              aria-label="Abrir o site da Webgest Solutions em nova guia"
+              className="flex items-center space-x-2 rounded-lg bg-white/90 px-4 py-2 backdrop-blur-sm transition hover:bg-white/95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400/70 focus:ring-offset-background"
+              href="https://webgestsolutions.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <img alt="Webgest Solutions" className="h-12 w-12" src={webgestLogo} />
               <span className="text-xs text-gray-500 transition-colors hover:text-gray-900">
                 Desenvolvido com Webgest Solutions
               </span>
-            </div>
+            </a>
           </div>
 
           <div className="mt-4 text-sm text-muted-foreground">

@@ -1,30 +1,10 @@
 ﻿import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import portfolioAlexandre from "@/assets/portfolio-alexandre.jpg";
-import portfolioBoston from "@/assets/portfolio-boston.jpg";
-import portfolioGerson from "@/assets/portfolio-gerson.jpg";
-
-const PORTFOLIO_ITEMS = [
-  {
-    category: "Evento corporativo",
-    title: "Boston Scientifics",
-    image: portfolioBoston,
-  },
-  {
-    category: "Show ao vivo",
-    title: "Alexandre Pires",
-    image: portfolioAlexandre,
-  },
-  {
-    category: "Gravacao de DVD",
-    title: "Gerson Rufino",
-    image: portfolioGerson,
-  },
-] as const;
+import { PORTFOLIO_ITEMS } from "@/data/portfolio";
 
 export function PortfolioSection() {
   return (
-    <section id="portfolio" className="bg-blue-900/10 py-20 md:py-32">
+    <section id="portfolio" className="scroll-mt-24 md:scroll-mt-28 bg-blue-900/10 py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold md:text-4xl">
@@ -36,14 +16,14 @@ export function PortfolioSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {PORTFOLIO_ITEMS.map((item, index) => (
+          {PORTFOLIO_ITEMS.map((item) => (
             <Link
               className="group relative block overflow-hidden rounded-lg shadow-lg"
-              key={`${item.title}-${index}`}
+              key={item.id}
               to="/portfolio"
             >
               <img
-                alt={item.title}
+                alt={item.alt}
                 className="h-96 w-full transform object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-110"
                 loading="lazy"
                 src={item.image}
@@ -70,3 +50,4 @@ export function PortfolioSection() {
     </section>
   );
 }
+

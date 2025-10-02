@@ -33,7 +33,7 @@ const ABOUT_STATS = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-gradient-to-b from-background to-background/95 py-20">
+    <section id="about" className="scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-background to-background/95 py-20">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <div className="animate-fade-in-left">
@@ -76,3 +76,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+

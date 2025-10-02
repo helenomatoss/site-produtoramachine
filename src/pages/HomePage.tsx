@@ -10,6 +10,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
+      <div aria-hidden="true" className="h-0 w-0" id="top" />
       <main>
         <HeroSection />
         <ServicesSection />
@@ -23,4 +24,6 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
 
