@@ -5,7 +5,6 @@ import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { PortfolioSection } from "@/components/sections/PortfolioSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
 
 const HomePage = () => {
   return (
@@ -15,7 +14,6 @@ const HomePage = () => {
         <HeroSection />
         <ServicesSection />
         <PortfolioSection />
-        <TestimonialsSection />
         <AboutSection />
         <ContactSection />
       </main>
@@ -25,3 +23,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
