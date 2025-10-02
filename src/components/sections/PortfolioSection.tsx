@@ -1,26 +1,6 @@
 ﻿import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import portfolioAlexandre from "@/assets/portfolio-alexandre.jpg";
-import portfolioBoston from "@/assets/portfolio-boston.jpg";
-import portfolioGerson from "@/assets/portfolio-gerson.jpg";
-
-const PORTFOLIO_ITEMS = [
-  {
-    category: "Evento corporativo",
-    title: "Boston Scientifics",
-    image: portfolioBoston,
-  },
-  {
-    category: "Show ao vivo",
-    title: "Alexandre Pires",
-    image: portfolioAlexandre,
-  },
-  {
-    category: "Gravacao de DVD",
-    title: "Gerson Rufino",
-    image: portfolioGerson,
-  },
-] as const;
+import { PORTFOLIO_ITEMS } from "@/data/portfolio";
 
 export function PortfolioSection() {
   return (
@@ -36,14 +16,14 @@ export function PortfolioSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {PORTFOLIO_ITEMS.map((item, index) => (
+          {PORTFOLIO_ITEMS.map((item) => (
             <Link
               className="group relative block overflow-hidden rounded-lg shadow-lg"
-              key={`${item.title}-${index}`}
+              key={item.id}
               to="/portfolio"
             >
               <img
-                alt={item.title}
+                alt={item.alt}
                 className="h-96 w-full transform object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-110"
                 loading="lazy"
                 src={item.image}
