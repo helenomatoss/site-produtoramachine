@@ -39,7 +39,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-background to-background/95 py-20">
       <div className="container mx-auto px-6">
-        <div className="animate-fade-in-up mb-16 text-center">
+        <div className="animate-fade-in-up mb-16 text-center space-y-4 md:space-y-6">
           <h2 className="text-4xl font-bold md:text-5xl">
             Serviços completos de <span className="text-glow">produção</span>
           </h2>
