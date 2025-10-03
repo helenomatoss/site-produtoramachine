@@ -9,6 +9,7 @@ export type PortfolioItem = {
   image: string;
   alt: string;
   description?: string;
+  objectPosition?: string;
 };
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
@@ -35,5 +36,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     image: portfolioGerson,
     alt: "Cena da gravação de DVD do cantor Gerson Rufino",
     description: "Gravação de DVD com iluminação cênica e cinematografia dedicada.",
+    objectPosition: "center 20%",
   },
 ];
+
+
