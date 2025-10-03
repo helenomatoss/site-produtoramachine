@@ -27,7 +27,7 @@ const ContactSection = () => {
 
     toast({
       title: "Mensagem enviada com sucesso",
-      description: "Entraremos em contato em ate 24 horas.",
+      description: "Entraremos em contato em até 24 horas.",
     });
 
     setFormData({ name: "", email: "", message: "" });
@@ -39,7 +39,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="animate-fade-in-up mb-16 text-center">
           <h2 className="text-4xl font-bold md:text-5xl">
-            Pronto para criar <span className="text-glow">algo incrivel?</span>
+            Pronto para criar <span className="text-glow">algo incrível?</span>
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-muted-foreground">
             Conte com a nossa equipe para transformar ideias em projetos audiovisuais marcantes.
@@ -67,7 +67,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <label className="mb-2 block text-sm font-medium text-foreground" htmlFor="email">
-                  Endereco de email
+                  Endereço de e-mail
                 </label>
                 <Input
                   autoComplete="email"
@@ -75,7 +75,7 @@ const ContactSection = () => {
                   id="email"
                   name="email"
                   onChange={handleInputChange}
-                  placeholder="Digite seu email"
+                  placeholder="Digite seu e-mail"
                   required
                   type="email"
                   value={formData.email}
@@ -90,7 +90,7 @@ const ContactSection = () => {
                   id="message"
                   name="message"
                   onChange={handleInputChange}
-                  placeholder="Compartilhe objetivos, prazos e necessidades especificas"
+                  placeholder="Compartilhe objetivos, prazos e necessidades específicas"
                   required
                   rows={6}
                   value={formData.message}
@@ -124,9 +124,9 @@ const ContactSection = () => {
                     <Mail aria-hidden className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="mb-1 font-semibold text-foreground">Envie um email</h3>
+                    <h3 className="mb-1 font-semibold text-foreground">Envie um e-mail</h3>
                     <p className="text-muted-foreground">{EMAIL}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">Retorno em ate 24 horas uteis</p>
+                    <p className="mt-1 text-sm text-muted-foreground">Retorno em até 24 horas úteis</p>
                   </div>
                 </div>
               </Card>
@@ -146,7 +146,7 @@ const ContactSection = () => {
                     <div>
                       <h3 className="mb-1 font-semibold text-foreground">Fale com a equipe</h3>
                       <p className="text-muted-foreground">{PHONE_DISPLAY}</p>
-                      <p className="mt-1 text-sm text-muted-foreground">Segunda a sexta, das 8h as 18h</p>
+                      <p className="mt-1 text-sm text-muted-foreground">Segunda a sexta, das 8h às 18h</p>
                     </div>
                   </div>
                 </Card>

@@ -6,32 +6,32 @@ const SERVICES = [
   {
     icon: Video,
     title: "Videoclipes e DVDs",
-    description: "Narrativa com linguagem cinematografica e finalizacao profissional para dar vida a cada musica.",
+    description: "Narrativa com linguagem cinematográfica e finalização profissional para dar vida a cada música.",
   },
   {
     icon: Users,
     title: "Eventos e shows ao vivo",
-    description: "Cobertura completa para eventos de qualquer porte com palco, audio e video integrados.",
+    description: "Cobertura completa para eventos de qualquer porte com palco, áudio e vídeo integrados.",
   },
   {
     icon: Radio,
-    title: "Transmissoes ao vivo",
-    description: "Streaming estavel em alta definicao com audio nitido e direcao multicamera.",
+    title: "Transmissões ao vivo",
+    description: "Streaming estável em alta definição com áudio nítido e direção multicâmera.",
   },
   {
     icon: Camera,
-    title: "Video corporativo",
-    description: "Apresentacoes, treinamentos e campanhas institucionais com narrativa alinhada ao seu negocio.",
+    title: "Vídeo corporativo",
+    description: "Apresentações, treinamentos e campanhas institucionais com narrativa alinhada ao seu negócio.",
   },
   {
     icon: Mic,
-    title: "Producao de audio",
-    description: "Gravacao, mixagem e masterizacao realizadas com equipamentos de referencia no mercado.",
+    title: "Produção de áudio",
+    description: "Gravação, mixagem e masterização realizadas com equipamentos de referência no mercado.",
   },
   {
     icon: Lightbulb,
-    title: "Iluminacao cenica",
-    description: "Desenho de luz dinamico para criar atmosferas marcantes em cada producao.",
+    title: "Iluminação cênica",
+    description: "Desenho de luz dinâmico para criar atmosferas marcantes em cada produção.",
   },
 ] as const;
 
@@ -41,7 +41,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         <div className="animate-fade-in-up mb-16 text-center">
           <h2 className="text-4xl font-bold md:text-5xl">
-            Servicos completos de <span className="text-glow">producao</span>
+            Serviços completos de <span className="text-glow">produção</span>
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-muted-foreground">
             Cuidamos de cada etapa com planejamento preciso, criatividade e tecnologia de ponta.
@@ -74,4 +74,3 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
-

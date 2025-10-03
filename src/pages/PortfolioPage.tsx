@@ -21,10 +21,10 @@ const PortfolioPage = () => {
               </Link>
               <div className="animate-fade-in-up text-center">
                 <h1 className="mb-6 text-4xl font-bold md:text-5xl">
-                  Nosso <span className="text-glow">portfolio</span>
+                  Nosso <span className="text-glow">portfólio</span>
                 </h1>
                 <p className="mx-auto max-w-3xl text-xl text-muted-foreground">
-                  Explore producoes audiovisuais realizadas para marcas, artistas e eventos em todo o Brasil.
+                  Explore produções audiovisuais realizadas para marcas, artistas e eventos em todo o Brasil.
                 </p>
               </div>
             </div>
@@ -64,3 +64,4 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
