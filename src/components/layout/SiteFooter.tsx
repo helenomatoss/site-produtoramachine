@@ -9,7 +9,7 @@ const SiteFooter = () => {
           <div className="mb-6">
             <h3 className="mb-2 text-2xl font-bold text-glow">{siteMetadata.brandName}</h3>
             <p className="mx-auto max-w-2xl text-muted-foreground">
-              Criamos experiencias audiovisuais marcantes com planejamento, tecnologia e atencao aos detalhes.
+              Criamos experiências audiovisuais marcantes com planejamento, tecnologia e atenção aos detalhes.
             </p>
           </div>
 
@@ -38,3 +38,4 @@ const SiteFooter = () => {
 };
 
 export default SiteFooter;
+

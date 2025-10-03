@@ -5,8 +5,8 @@ import produtoraMachineLogo from "@/assets/produtora-machine-logo.png";
 import { siteMetadata } from "@/config/site-metadata";
 
 const NAVIGATION_TARGETS = [
-  { id: "services", label: "Servicos" },
-  { id: "portfolio", label: "Portfolio" },
+  { id: "services", label: "Serviços" },
+  { id: "portfolio", label: "Portfólio" },
   { id: "about", label: "Sobre" },
 ] as const;
 
@@ -65,7 +65,7 @@ const SiteHeader = () => {
 
           <button
             aria-expanded={isMenuOpen}
-            aria-label="Abrir menu de navegacao"
+            aria-label="Abrir menu de navegação"
             className="text-foreground md:hidden"
             onClick={() => setIsMenuOpen((previous) => !previous)}
             type="button"
@@ -99,5 +99,6 @@ const SiteHeader = () => {
 };
 
 export default SiteHeader;
+
 
 

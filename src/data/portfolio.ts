@@ -9,6 +9,7 @@ export type PortfolioItem = {
   image: string;
   alt: string;
   description?: string;
+  objectPosition?: string;
 };
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
@@ -18,7 +19,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: "Evento corporativo",
     image: portfolioBoston,
     alt: "Painel iluminado com o logotipo da Boston Scientifics ao fundo",
-    description: "Evento corporativo com transmissao ao vivo e cobertura integral de palco e plateia.",
+    description: "Evento corporativo com transmissão ao vivo e cobertura integral de palco e plateia.",
   },
   {
     id: "alexandre-pires",
@@ -26,14 +27,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: "Show ao vivo",
     image: portfolioAlexandre,
     alt: "Show ao vivo de Alexandre Pires sob luzes coloridas",
-    description: "Show registrado com direcao de multicameras e audio profissional para DVD.",
+    description: "Show registrado com direção de multicâmeras e áudio profissional para DVD.",
   },
   {
     id: "gerson-rufino",
     title: "Gerson Rufino",
-    category: "Gravacao de DVD",
+    category: "Gravação de DVD",
     image: portfolioGerson,
-    alt: "Cena da gravacao de DVD do cantor Gerson Rufino",
-    description: "Gravacao de DVD com iluminacao cenica e cinematografia dedicada.",
+    alt: "Cena da gravação de DVD do cantor Gerson Rufino",
+    description: "Gravação de DVD com iluminação cênica e cinematografia dedicada.",
+    objectPosition: "center 20%",
   },
 ];
+
+

@@ -5,7 +5,7 @@ const ABOUT_FEATURES = [
   {
     icon: Award,
     title: "Qualidade premium",
-    description: "Equipamentos de ponta e padroes profissionais em todas as etapas.",
+    description: "Equipamentos de ponta e padrões profissionais em todas as etapas.",
   },
   {
     icon: Users,
@@ -14,19 +14,19 @@ const ABOUT_FEATURES = [
   },
   {
     icon: Zap,
-    title: "Entrega agil",
-    description: "Processos eficientes que mantem o ritmo sem perder excelencia.",
+    title: "Entrega ágil",
+    description: "Processos eficientes que mantêm o ritmo sem perder excelência.",
   },
   {
     icon: Heart,
-    title: "Paixao por historias",
-    description: "Cada projeto recebe dedicacao integral da nossa equipe criativa.",
+    title: "Paixão por histórias",
+    description: "Cada projeto recebe dedicação integral da nossa equipe criativa.",
   },
 ] as const;
 
 const ABOUT_STATS = [
   { label: "Projetos realizados", value: "500+" },
-  { label: "Anos de experiencia", value: "10+" },
+  { label: "Anos de experiência", value: "10+" },
   { label: "Clientes atendidos", value: "50+" },
   { label: "Suporte dedicado", value: "24/7" },
 ] as const;
@@ -41,7 +41,7 @@ const AboutSection = () => {
               Por que escolher a <span className="text-glow">Machine Produtora</span>
             </h2>
             <p className="mb-8 text-xl leading-relaxed text-muted-foreground">
-              Transformamos ideias em experiencias que emocionam. A combinacao de estrategia, estetica e tecnologia guia cada entrega, do briefing a finalizacao.
+              Transformamos ideias em experiências que emocionam. A combinação de estratégia, estética e tecnologia guia cada entrega, do briefing à finalização.
             </p>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -76,4 +76,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-

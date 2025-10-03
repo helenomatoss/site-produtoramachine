@@ -22,12 +22,12 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="mx-auto max-w-4xl animate-fade-in-up">
           <h1 id="hero-heading" className="mb-6 text-5xl font-bold leading-tight md:text-7xl">
-            Transforme sua visao em uma
-            <span className="text-glow"> experiencia inesquecivel</span>
+            Transforme sua visão em uma{" "}
+            <span className="text-glow">experiência inesquecível</span>
           </h1>
 
           <p className="mx-auto mb-8 max-w-3xl text-xl leading-relaxed text-muted-foreground md:text-2xl">
-            Do conceito a entrega, produzimos videos e audio que envolvem seu publico e elevam a presenca da sua marca.
+            Do conceito à entrega, produzimos vídeos e áudio que envolvem seu público e elevam a presença da sua marca.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
