@@ -39,13 +39,13 @@ const PortfolioPage = () => {
                   <div className="relative h-64 overflow-hidden rounded-xl">
                     <img
                       alt={item.alt}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                       loading="lazy"
                       src={item.image}
+                      style={item.objectPosition ? { objectPosition: item.objectPosition } : undefined}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-left">
-                      <span className="mb-2 block text-sm font-medium text-secondary">{item.category}</span>
                       <h2 className="mb-2 text-xl font-bold text-white">{item.title}</h2>
                       {item.description ? (
                         <p className="text-sm text-gray-300">{item.description}</p>
